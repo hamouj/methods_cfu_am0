@@ -32,12 +32,12 @@ p user_name.chars
 puts last_login.byteslice(6, 4)
 # The byteslice method, when called on a string object,
 # will pass the argument, in which the first value is an integer representing the index position and the second value is an integer representing the number of characters,
-# and return a string of characters, starting at the index position listed in the argument and continuing to include the number of characters based on the argument.
+# and return a string of characters, starting at the index position listed in the argument and continuing to include the number of characters based on the second value of the argument.
 
 puts user_name.insert(-4, '!')
 # The insert method, when called on a string object, 
 # will pass the argument that contains an integer representing the index position, followed by a string of the characters to be inserted,
-# and return a string in which the characters from the argument are inserted into the index position stated in the argument.
+# and return a string in which the characters from the argument are inserted into the index position stated in the first value of the argument.
 # If the index position listed in the argument is negative, the characters will be inserted that number of characters from the end.
 
 puts last_login.delete_suffix("09")
