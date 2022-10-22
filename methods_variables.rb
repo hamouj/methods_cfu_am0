@@ -37,6 +37,8 @@ puts last_login.byteslice(6, 4)
 
 # The return string is "2021" because it returned 4 characters starting at index position 6.
 
+# More concise version: The byteslice() string method isolates and returns a section of the string based on two parameters, the index position and the number of characters.
+
 puts user_name.insert(-4, '!')
 puts user_name.insert (2, "!")
 # The insert string method declares two parameters, the first, an integer representing the index position, the second, a string of the character(s) to be inserted,
@@ -45,6 +47,8 @@ puts user_name.insert (2, "!")
 
 # The first return string is "coco_1!1am". The string "!" was inserted 4 places from the end.
 # The second return string is "co!co_11am". The string "!" was inserted in index position 2.
+
+# More concise version: The insert() string method inserts characters within a string based on two parameters, the position and the characters to be inserted.
 
 puts last_login.delete_suffix("/2021")
 puts last_login.delete_suffix("09")
@@ -55,6 +59,7 @@ puts last_login.delete_suffix("09")
 # The first return string is "12/09" because the suffix "/2021" was deleted from the original string.
 # The second return string is "12/09/2021" because the string included in the argument is not at the end of the object string.
 
+# More concise version: The delete_suffix() string method deletes ending characters based on the characters entered into the argument.
 
 # 2: Do some research (either testing out with your own code or Googling) to build an understanding of what the `!` does, when at the end of a method name. Show your understading by providing an example and writing an explanation.
 
