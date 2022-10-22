@@ -22,7 +22,7 @@
 
 "Hello World".end_with?("rld")
 # The end_with question mark method is called on the string object "Hello World".
-# The argument "Hello" is passed; the end_with question mark method determines if the argument exists at the end of the object string.
+# The argument "rld" is passed; the end_with question mark method determines if the argument exists at the end of the object string.
 # The return value is a Boolean of true since the object string ends with the characters "rld". 
 
 12.even?
