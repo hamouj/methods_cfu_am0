@@ -8,9 +8,12 @@
 #  call reverse on the variable, print it out
 #  call length on the variable, print it out
 
+baby_name = "Hailey"
 
-
-
+print baby_name.upcase
+print baby_name.downcase
+print baby_name.reverse
+print baby_name.length
 
 
 
