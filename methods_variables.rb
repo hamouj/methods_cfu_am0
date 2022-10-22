@@ -27,32 +27,29 @@ last_login = "12/09/2021"
   # Write the methods out on the lines below, with an explanation in your own words of how they work.
 
 p user_name.chars
-# The chars method, when called on a string object, returns an array in which each element is a character of the original string object.
+# The chars string method returns an array in which each element is a character of the original string object.
 
 # The return array is ["c", "o", "c", "o", "_", "1", "1", "a", "m"].
 
 puts last_login.byteslice(6, 4)
-# The byteslice method, when called on a string object,
-# will pass the argument, in which the first value is an integer representing the index position and the second value is an integer representing the number of characters,
-# and return a string of characters, starting at the index position listed in the argument and continuing to include the number of characters based on the second value of the argument.
+# The byteslice string method declares two parameters, the first, an integer representing the index position and the second, an integer representing the number of characters,
+# and returns a string of characters, starting at the index position named in the first argument and continuing to include the number of characters named in the second argument.
 
 # The return string is "2021" because it returned 4 characters starting at index position 6.
 
 puts user_name.insert(-4, '!')
 puts user_name.insert (2, "!")
-# The insert method, when called on a string object, 
-# will pass the argument that contains an integer representing the index position, followed by a string of the characters to be inserted,
-# and return a string in which the characters from the argument are inserted into the index position stated in the first value of the argument.
-# If the index position listed in the argument is negative, the characters will be inserted that number of characters from the end.
+# The insert string method declares two parameters, the first, an integer representing the index position, the second, a string of the character(s) to be inserted,
+# and returns a string in which the character(s) named in the second argument are inserted into the index position named in the first argument.
+# If the index position named in the argument is negative, the characters will be inserted that number of characters from the end.
 
 # The first return string is "coco_1!1am". The string "!" was inserted 4 places from the end.
-# The second return string is "co!co_11am". The string "!" was inserted in index position 4.
+# The second return string is "co!co_11am". The string "!" was inserted in index position 2.
 
 puts last_login.delete_suffix("/2021")
 puts last_login.delete_suffix("09")
-# The delete_suffix method, when called on a string object,
-# will pass the argument that contains a string of the characters to be deleted from the end of the string,
-# and return a string that includes only the beginning characters that are not part of the argument.
+# The delete_suffix string method declares one parameter containing a string of the characters to be deleted from the end of the string,
+# and returns a string that includes only the beginning characters that are not part of the argument.
 # If the argument contains characters from the beginning or middle of the string, the return will be the original string.
 
 # The first return string is "12/09" because the suffix "/2021" was deleted from the original string.
